@@ -3,7 +3,7 @@ document.write(`
 <div class="main-header--top">
   <!-- Logo -->
   <a href="./index.php" class="logo-2 font_one">
-    <img src="./assets/img2/logo-trans-white.png" alt="Imperia Cars" />
+    <img src="./assets/img2/logo-trans-white.png" alt="NWS Werbetechnik" />
   </a>
 
   <div class="wrapper">
