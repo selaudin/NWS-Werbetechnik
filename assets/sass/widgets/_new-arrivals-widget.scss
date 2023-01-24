@@ -1,0 +1,128 @@
+.new-arrivals-widget {
+  .new-arrivals-slider {
+    .slick-track {
+      padding: 20px 0;
+    }
+
+    .slick-slide {
+      margin: 0 15px;
+      box-shadow: 0 0 12.92px 4.08px rgba(0, 0, 1, 0.15);
+    }
+
+    .slick-list {
+      margin: 0 -15px;
+    }
+
+    .model-slide {
+      .model-slide-header {
+        min-height: 175px;
+        background: #fff;
+        padding: 15px 30px 0 30px;
+        word-break: break-word;
+
+        @media all and(max-width: 574px) {
+          padding: 15px 15px 0 15px;
+        }
+
+        .model-title {
+          font-size: 20px;
+          line-height: 30px;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 8px;
+          margin-bottom: 8px;
+          position: relative;
+          transition: $transition300;
+          word-break: break-word;
+
+          &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 53px;
+            height: 1px;
+            background-color: $mainFontColor;
+          }
+
+          @media all and(max-width: 574px) {
+            font-size: 21px;
+            line-height: 31px;
+          }
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+
+        .model-table {
+          text-align: left;
+          border: none;
+
+          tbody {
+            tr {
+              th,
+              td {
+                border: none;
+                padding: 0;
+                font-size: 15px;
+                line-height: 23px;
+              }
+
+              th {
+                width: 30%;
+                max-width: 120px;
+                font-weight: 600;
+
+                @media all and (max-width: 374px) {
+                  width: 40%;
+                }
+              }
+
+              td {
+                color: $light-grey;
+                font-size: 15px;
+                line-height: 1.1;
+                font-weight: 300;
+
+                &.is-green {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .model-slide-footer {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-btn:first-child {
+          background-color: #f7f7f7;
+          border-right: 1px solid $border-base;
+        }
+
+        .footer-btn {
+          width: 50%;
+          text-align: center;
+          background-color: #fff;
+          font-size: 16px;
+          padding: 18px 10px;
+          text-transform: uppercase;
+          color: #414141;
+          transition: $transition300;
+
+          @media all and (max-width: 574px) {
+            padding: 14px 10px;
+          }
+
+          &:hover {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,241 @@
+@import "header/header-top-line";
+
+#header {
+  .header-inner {
+    padding: 44px 44px 0 44px;
+
+    // Small devices
+    @media all and (max-width: 767px) {
+      padding: 44px 30px 0 30px;
+    }
+  }
+}
+
+// styles for simple pages header
+
+.inner-page-end-box {
+  min-height: 428px;
+  background: url("#{$img}header_bg.png") 50% 0 no-repeat;
+  transform-style: inherit;
+
+  // Extra small devices
+  @media all and (max-width: 574px) {
+    min-height: 320px;
+  }
+
+  // Small devices
+  @media all and (min-width: 575px) and (max-width: 767px) {
+    min-height: 360px;
+  }
+
+  // Medium devices
+  @media all and (min-width: 768px) and (max-width: 991px) {
+  }
+
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+  }
+}
+
+.main-header {
+  position: relative;
+  z-index: 4;
+
+  .main-header--top {
+    height: 45px;
+    background: $mainFontColor;
+    position: relative;
+
+    .logo-2 {
+      width: 152px;
+      height: 135px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: $primary-color;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: rem(32px);
+      line-height: rem(32px);
+      font-weight: bold;
+    }
+
+    .main-header-top-wrapper {
+      display: flex;
+      justify-content: space-between;
+
+      .main-header--contact {
+        font-size: 13px;
+        line-height: 13px;
+        height: 45px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+
+        @media all and (max-width: 991px) {
+          justify-content: center;
+        }
+
+        @media all and (min-width: 1500px) {
+          justify-content: space-between;
+          padding: 0 40px 0 0;
+        }
+
+        .main-header-contact--item {
+          display: flex;
+          justify-content: space-around;
+          padding: 0 20px;
+          font-size: 14px;
+
+          & > a {
+            color: #fff;
+          }
+
+          i.fas {
+            font-size: 13px;
+            margin-right: 10px;
+          }
+
+          span {
+            margin-right: 5px;
+            display: inline-block;
+          }
+
+          a {
+            transition: $transition300;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+
+        .header-phone-box1 {
+          @media all and (max-width: 767px) {
+            display: none;
+          }
+
+          @media all and (max-width: 991px) {
+            padding: 0;
+          }
+        }
+
+        .header-phone-box2 {
+          @media all and (max-width: 991px) {
+            display: none;
+          }
+        }
+
+        .header-phone-box3 {
+          @media all and (max-width: 1199px) {
+            display: none;
+          }
+        }
+      }
+
+      .main-header-test-btn {
+        background: $primary-color;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        line-height: 44px;
+        color: #fff;
+        height: 45px;
+        padding: 0 35px;
+        display: none;
+        box-shadow: none;
+        transition: $transition300;
+
+        @media all and (min-width: 1500px) {
+          display: block;
+        }
+
+        &:hover {
+          background: #1a1a1a;
+        }
+      }
+    }
+
+    .main-header--social {
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+
+      @media all and (max-width: 767px) {
+        margin-right: 25px;
+      }
+
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        margin-right: 33px;
+      }
+
+      li {
+        margin: 0 5px;
+
+        a {
+          width: 28px;
+          height: 28px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #2cbfc7;
+          transition: $transition300;
+
+          &:hover {
+            background: $mainFontColor;
+          }
+
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .main-header--bottom {
+    height: 45px;
+    background: #f7f7f7;
+    //box-shadow: 0 1px 2px rgba(0, 0, 0, 0.46);
+
+    .main-header-bottom-wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      @media screen and (min-width: 1200px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// fixed box to all pages
+#fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+// need for margin-top for fixedheader
+html {
+  --top-spacing: 90px;
+  // scroll-padding-top: var(--top-spacing);
+}
+
+body {
+  // ULTIMATELY this needs to go on <html>, not <body>.
+  scroll-padding-top: var(--top-spacing);
+  margin-top: var(--top-spacing);
+}

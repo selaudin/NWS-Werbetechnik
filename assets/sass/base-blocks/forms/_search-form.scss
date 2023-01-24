@@ -1,0 +1,47 @@
+.openSearchBar {
+    #cboxContent {
+        background: transparent !important;
+    }
+}
+
+#search-form-box {
+   display: none;
+    overflow: hidden;
+
+   .search-form {
+    width: 100%;
+
+    input[type=text] {
+        width: inherit;
+        height: 70px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        color:#fff !important;
+        font-size: 1.875rem;
+        line-height: normal;
+        padding: 0 14px 0 14px;
+        background: transparent;
+        font-family: inherit;
+        
+        @media screen and (max-width: 479px) {
+            font-size: 1.5rem;
+        }
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+        }
+
+        &::-moz-placeholder {
+            color: #fff;
+        }
+
+        &:-ms-input-placeholder {
+            color: #fff;
+        }
+
+        &:-moz-placeholder {
+            color: #fff;
+        }
+    }
+   }
+}

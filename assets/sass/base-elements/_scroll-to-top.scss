@@ -1,0 +1,51 @@
+/* --------------------------------
+SCROLL TO TOP
+-------------------------------- */
+#scrollTop {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  transform: translate(100%);
+  min-width: 115px;
+  height: 40px;
+  margin-top: 90px;
+  background-image: linear-gradient(90deg, #2cbfc7 0, #38d6b9 51%, #46edaa);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding-right: 11px;
+  padding-left: 11px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &.active {
+    transform: translate(calc(100% - 40px));
+
+    &:hover {
+      transform: translate(0);
+    }
+  }
+}
+
+.scrollTop__icon {
+  height: 40px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-weight: 600;
+
+  svg {
+    width: 19px;
+    display: block;
+    margin-right: 12px;
+
+    path {
+      fill: #fff;
+    }
+  }
+}

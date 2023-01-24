@@ -1,0 +1,69 @@
+/* MobyJs menu overwriting styles */
+.moby  {
+    & > ul {
+        margin-top: 10px;
+    }
+
+    ul {
+
+        li {
+
+            a {
+                padding: 8px 45px 8px 30px;
+                font-family: $mainFont;
+                font-size: 16px;
+                line-height: 1.2;
+                color: $mainFontColor;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            & > ul {
+                margin-top: -5px;
+            }
+
+            ul {
+
+                li {
+
+                    a {
+                        padding: 8px 45px 8px 45px;
+                        font-size: 16px;
+                        line-height: 1.2;
+
+                    }
+                }
+            }
+
+            ul:not(.sub-menu) {
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .moby-close {
+        background-image: linear-gradient(90deg,#2cbfc7 0,#38d6b9 51%,#46edaa);
+        justify-content: center !important;
+        padding: 0 !important;
+        height: 90px;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+        @media screen and (min-width: 767px) and (max-width: 991px) {
+            height: 80px;
+        }
+
+        .moby-close-icon {
+            margin-right: 0 !important;
+
+            &:before, &:after {
+                background: #fff;
+            }
+        }
+    }
+
+    .moby-menu {
+        margin-top: 10px;
+    }
+}

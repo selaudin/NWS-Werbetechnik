@@ -1,0 +1,53 @@
+.brands-nav-widget {
+  background-color: $mainFontColor;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+
+  @media all and (max-width: 767px) {
+    display: none;
+  }
+
+  .brands-box {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+
+    .brands-title {
+      font-size: 19px;
+      text-transform: uppercase;
+      line-height: 1.2;
+      color: #fff;
+      padding-right: 20px;
+      position: relative;
+      border-right: 1px solid #464646;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      min-width: 120px;
+    }
+
+    .brands-list {
+      margin-left: 20px;
+
+      li {
+        display: inline-block;
+        margin-left: 6px;
+        margin-right: 6px;
+
+        a {
+          font-size: 15px;
+          line-height: 1.2;
+          text-transform: uppercase;
+          font-weight: 300;
+          color: #fff;
+          transition: $transition300;
+
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}

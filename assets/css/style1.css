@@ -1,0 +1,46 @@
+h1 { color: white; font-family: Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 16.5pt; }
+p { color: white; font-family: "Work Sans", sans-serif; font-style: normal; font-weight: 400; font-size: 1rem; line-height: 1.75rem; text-decoration: none; font-size: 16px; margin:0pt; }
+.s1 { color: white; font-family: Poppins, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 18px; margin-bottom: 10px; font-weight: 700;}
+.s2 { color: #F00; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16px; }
+h2 { color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 21px; margin-top: 20px;}
+.a { color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16px; }
+li {display: block; }
+#l1 {padding-left: 0pt;counter-reset: c1 1; }
+#l1> li>*:first-child:before {counter-increment: c1; content: counter(c1, decimal)". "; color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 17pt; }
+#l1> li:first-child>*:first-child:before {counter-increment: c1 0;  }
+#l2 {padding-left: 0pt;counter-reset: c2 1; }
+#l2> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l2> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l3 {padding-left: 0pt;counter-reset: c2 1; }
+#l3> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l3> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l4 {padding-left: 0pt;counter-reset: c2 1; }
+#l4> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l4> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l5 {padding-left: 0pt; }
+#l5> li>*:first-child:before {content: "- "; color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+#l6 {padding-left: 0pt;counter-reset: c2 1; }
+#l6> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l6> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l7 {padding-left: 0pt;counter-reset: c2 1; }
+#l7> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l7> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l8 {padding-left: 0pt; }
+#l8> li>*:first-child:before {content: "- "; color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+#l9 {padding-left: 0pt; }
+#l9> li>*:first-child:before {content: "- "; color: white; font-family:Arial, sans-serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 16pt; }
+#l10 {padding-left: 0pt;counter-reset: c2 1; }
+#l10> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l10> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l11 {padding-left: 0pt;counter-reset: c2 1; }
+#l11> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l11> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l12 {padding-left: 0pt;counter-reset: c2 1; }
+#l12> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l12> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l13 {padding-left: 0pt;counter-reset: c2 1; }
+#l13> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l13> li:first-child>*:first-child:before {counter-increment: c2 0;  }
+#l14 {padding-left: 0pt;counter-reset: c2 1; }
+#l14> li>*:first-child:before {counter-increment: c2; content: counter(c1, decimal)"."counter(c2, decimal)" "; color: white; font-style: normal; font-weight: normal; text-decoration: none; }
+#l14> li:first-child>*:first-child:before {counter-increment: c2 0;  }

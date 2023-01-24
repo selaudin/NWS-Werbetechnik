@@ -1,0 +1,278 @@
+.models-slider-widget {
+  .models-slider {
+    max-width: 1950px;
+    width: 100%;
+    padding: 85px 58px 0 58px;
+    position: relative;
+    z-index: 2;
+    min-height: 610px;
+
+    @media all and (min-width: 992px) {
+      min-height: 800px;
+    }
+
+    &:before {
+      content: "";
+      width: 100%;
+      min-height: 440px;
+      background: #84878c;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      // extra small devices
+      @media all and (min-width: 320px) and (max-width: 574px) {
+        min-height: 440px;
+      }
+
+      // Small devices
+      @media all and (min-width: 575px) and (max-width: 767px) {
+        min-height: 440px;
+      }
+
+      // Medium devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        min-height: 43%;
+      }
+
+      // Large devices
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        min-height: 420px;
+      }
+
+      // Extra large devices
+      @media all and (min-width: 1200px) and (max-width: 1439px) {
+        min-height: 37.5%;
+      }
+
+      // High resolution
+      @media all and (min-width: 1440px) and (max-width: 1779px) {
+        min-height: 41%;
+      }
+    }
+
+    .owl-nav {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      left: 0;
+      top: 0;
+      margin-top: 10%;
+      z-index: 3;
+      pointer-events: none;
+
+      // Extra small devices
+      @media all and (min-width: 320px) and (max-width: 574px) {
+        margin-top: 32%;
+      }
+
+      // Small devices
+      @media all and (min-width: 575px) and (max-width: 767px) {
+        margin-top: 26%;
+      }
+
+      // Medium devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        margin-top: 19%;
+      }
+
+      // Large devices
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        margin-top: 18%;
+      }
+
+      button {
+        pointer-events: visible;
+
+        &:hover {
+          background: transparent;
+        }
+
+        svg {
+          fill: #fff;
+          opacity: 0.4;
+          transition: opacity 300ms ease-in-out;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+
+      .owl-prev {
+        margin-left: 20px;
+      }
+
+      .owl-next {
+        margin-right: 20px;
+      }
+    }
+
+    .owl-stage-outer {
+      max-width: 1920px;
+      width: 100%;
+    }
+
+    .slide {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+
+      .slide-header {
+        color: #fff;
+        margin-bottom: 20%;
+        padding: 0 40px;
+        margin-left: 10px;
+
+        @media all and (min-width: 320px) and (max-width: 574px) {
+          padding: 0;
+        }
+
+        // Small devices
+        @media all and (max-width: 767px) {
+          margin-bottom: 12.5%;
+        }
+
+        .model-name {
+          font-size: rem(20px);
+          line-height: rem(28px);
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+
+        .model-price {
+          font-size: rem(18px);
+          line-height: rem(28px);
+          font-weight: normal;
+        }
+      }
+
+      .model-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .model-image {
+          width: 95%;
+          height: auto;
+          display: inline-block;
+          position: relative;
+          z-index: 3;
+          margin: 0 auto;
+
+          @media all and (min-width: 320px) and (max-width: 574px) {
+            width: 90%;
+          }
+        }
+
+        .model-details {
+          width: calc(100% - 14px);
+          display: block;
+          $border: 3px;
+          padding: 0 7% 10% 7%;
+          margin-top: -20%;
+          z-index: 2;
+          background: #fff;
+          border-bottom: solid $border transparent;
+          background-clip: padding-box;
+          box-shadow: 0 5px 7px 0 rgba(0, 0, 0, 0.15);
+          position: relative;
+
+          @media all and (min-width: 992px) {
+            display: none;
+          }
+
+          &:before {
+            width: 100%;
+            height: 3px;
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            margin-bottom: -2px;
+            background: linear-gradient(to right, #2cbfc7, #33ccc0, #46eeaa);
+          }
+
+          .technical-details-list {
+            margin-top: 25%;
+
+            li {
+              display: block;
+              margin-bottom: 20px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              span,
+              small {
+                display: block;
+                color: $mainFontColor;
+                word-break: break-word;
+
+                @media all and (min-width: 1880px) {
+                  width: 80%;
+                }
+              }
+
+              span {
+                font-weight: 500;
+                font-size: rem(22px);
+                line-height: rem(28px);
+
+                @media all and (max-width: 767px) {
+                  font-size: rem(18px);
+                  line-height: rem(22px);
+                  font-weight: 600;
+                }
+              }
+
+              small {
+                font-size: rem(18px);
+                line-height: rem(28px);
+                font-weight: 400;
+                margin-top: 3px;
+
+                @media all and (max-width: 767px) {
+                  font-size: rem(16px);
+                  line-height: rem(24px);
+                }
+              }
+            }
+          }
+
+          .battery-box {
+            display: flex;
+            align-items: center;
+            margin-top: 28px;
+
+            img {
+              display: inline-block;
+              width: 30px;
+              height: 35px;
+            }
+
+            .battery-info {
+              span {
+                display: block;
+                font-size: rem(16px);
+                line-height: rem(18px);
+                color: $mainFontColor;
+                margin-left: 15px;
+
+                @media all and (max-width: 767px) {
+                  font-size: rem(15px);
+                  line-height: rem(17px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

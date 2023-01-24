@@ -1,0 +1,73 @@
+.statistics-widget {
+  .statistics-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .statistics-item {
+      position: relative;
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding-left: 60px;
+      padding-right: 15px;
+      border-right: 1px solid #414141;
+
+      &:first-child {
+        padding-left: 0px;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+
+      @media all and (max-width: 991px) {
+        text-align: center;
+        margin-bottom: 20px;
+
+        &:nth-child(odd) {
+          width: 50%;
+          padding-right: 15px;
+          border-right: 1px solid $mainFontColor;
+        }
+
+        &:nth-child(even) {
+          width: 50%;
+          padding-left: 10px;
+          border-right: none;
+        }
+
+        // remove margin bottom for 3-n 4-n
+        &:nth-child(3),
+        &:nth-child(4) {
+          margin-bottom: 0;
+        }
+      }
+
+      .statistics-title {
+        font-size: 21px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        color: $mainFontColor;
+        position: relative;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: 23px;
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: 28px;
+        }
+      }
+
+      .statistics-subtitle {
+        color: #414141;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.1;
+      }
+    }
+  }
+}

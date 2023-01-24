@@ -1,0 +1,52 @@
+/* --------------------------------
+TEST DRIVE
+-------------------------------- */
+#testDrive {
+  position: fixed;
+  top: 40%;
+  margin-top: 45px;
+  right: 0;
+  transform: translate(calc(100% - 40px));
+  min-width: 115px;
+  height: 40px;
+  background-image: linear-gradient(90deg, #2cbfc7 0, #38d6b9 51%, #46edaa);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  cursor: pointer;
+  padding-right: 12px;
+  padding-left: 10px;
+  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: translate(0);
+  }
+
+  .testDrive__icon {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+
+    svg {
+      width: 22px;
+      display: block;
+      margin-right: 12px;
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    span {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+  }
+}

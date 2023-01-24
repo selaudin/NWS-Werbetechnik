@@ -1,0 +1,120 @@
+.hero-widget {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  & > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+    @media all and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .left-block {
+    .hero-text-box {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      color: #fff;
+      max-width: 600px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 53px;
+        height: 1px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0;
+      }
+
+      .hero-title {
+        font-size: 34px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        word-wrap: break-word;
+        color: #fff;
+        position: relative;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: 40px;
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: 46px;
+        }
+      }
+
+      .hero-subtitle {
+        font-size: 15px;
+        display: block;
+        margin-top: 10px;
+        line-height: 1.3;
+        color: #fff;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        max-width: 400px;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: 17px;
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .hero-bread-crumbs {
+      .breadcrumbs-list {
+        li {
+          display: inline-block;
+          font-size: 16px;
+          line-height: 1.1;
+          font-weight: 400;
+          color: #fff;
+
+          @media all and (min-width: 575px) and (max-width: 991px) {
+            font-size: 16px;
+          }
+
+          @media all and (min-width: 992px) {
+            font-size: 16px;
+          }
+
+          span.is-active {
+            color: #9b9b9b;
+          }
+        }
+      }
+    }
+  }
+
+  @media all and (max-width: 767px) {
+    .right-block {
+      margin-top: 40px;
+    }
+  }
+}

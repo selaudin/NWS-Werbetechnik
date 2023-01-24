@@ -1,0 +1,11 @@
+#home-03 {
+  padding-bottom: 70px;
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    padding-bottom: 85px;
+  }
+
+  @media all and (min-width: 992px) {
+    padding-bottom: 100px;
+  }
+}

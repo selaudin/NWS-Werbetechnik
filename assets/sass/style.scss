@@ -1,0 +1,91 @@
+/*==============================
+    Table of contents:
+
+    1. Own components
+    2. Bootstrap component
+    3. FontAwesome
+    4. Fonts
+    5. Vendor libs import
+    6. Reset styles
+    7. Base blocks
+    8. Base elements
+    9. Widgets
+    10. Animations
+    11. Effects
+    12. Common
+    13. Pages
+    14. Responsive
+    15. Icons
+===============================*/
+
+/* 1. Own components */
+@import "vars";
+@import "mixins";
+@import "helpers";
+
+/* 3. FontAwesome */
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/brands.scss";
+
+/* 4. Fonts */
+@import "fonts";
+
+/* 5. Vendor libs import */
+@import "./../../../bower_components/moby.js/dist/moby";
+@import "./../../../node_modules/owl.carousel/src/scss/owl.theme.default.scss";
+@import "./../../../node_modules/owl.carousel/src/scss/owl.carousel";
+@import "./../../../node_modules/slick-carousel/slick/slick.scss";
+@import "./../../../node_modules/custom-select/src/css/custom-select.css";
+
+@import "./../../../node_modules/wow.js/css/libs/animate";
+@import "./libs/lightbox";
+@import "./libs/colorbox";
+@import "./libs/lightslider";
+
+/* 6. Reset styles */
+@import "reset";
+
+/* 7. Base blocks */
+@import "base-blocks";
+
+/* 8. Base elements */
+@import "base-elements";
+
+/* 9. Widgets */
+@import "widgets";
+
+/* 10. Animations */
+@import "animations";
+
+/* 11. Effects */
+@import "effects";
+
+/* 12. Common */
+@import "common";
+
+/* 13. Pages */
+@import "pages/contact";
+@import "pages/about";
+@import "pages/models-1";
+@import "pages/models-2";
+@import "pages/model-single-1";
+@import "pages/model-single-2";
+@import "pages/blog";
+@import "pages/blog-single-right";
+@import "pages/blog-single-left";
+@import "pages/blog-single-without-sidebar";
+@import "pages/gallery";
+@import "pages/elements";
+@import "pages/index";
+@import "pages/index-2";
+@import "pages/index-3";
+@import "pages/index-4";
+@import "pages/index-5";
+@import "pages/trade-in";
+
+/* 14. Responsive */
+@import "responsive";
+
+/* 15. Icons */
+@import "icons";

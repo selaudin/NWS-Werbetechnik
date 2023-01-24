@@ -1,0 +1,179 @@
+.company-description-widget {
+  width: 100%;
+  background: url("https://via.placeholder.com/2040x690") 50% 50% no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  padding: 180px $gutter-width * 2 180px $gutter-width * 2;
+
+  // Extra small
+  @media all and (max-width: 574px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  // Small devices
+  @media all and (min-width: 575px) and (max-width: 767px) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  // Medium devices
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
+
+  // Large devices
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  // Extra large devices
+  @media all and (min-width: 1200px) and (max-width: 1439px) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    background-attachment: scroll;
+  }
+
+  .project-features-inner {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    // special style for masking text wrap
+    .masking-text-wrap {
+      margin-top: 0 !important;
+
+      // Extra small & small devices
+      @media all and (max-width: 767px) {
+        width: 100%;
+      }
+
+      // Medium devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        margin-top: 0 !important;
+      }
+
+      .masking-text {
+        text-align: center;
+
+        span {
+          display: inline-block;
+          font-size: rem(300px);
+          line-height: rem(300px);
+          background: url("#{$img}car-mask.png") left top no-repeat;
+          background-size: cover;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          font-weight: 700;
+          position: relative;
+          text-shadow: 1px 1px 10px rgba(70, 221, 175, 0.6);
+          margin-top: -35px;
+
+          @media all and (min-width: 320px) and (max-width: 574px) {
+            font-size: rem(180px);
+            line-height: rem(180px);
+            margin-bottom: 45px;
+          }
+
+          @media all and (min-width: 575px) and (max-width: 991px) {
+            margin-bottom: 55px;
+          }
+
+          // Large devices
+          @media all and (min-width: 992px) and (max-width: 1199px) {
+            margin-top: -20px;
+            font-size: rem(180px);
+            line-height: rem(180px);
+          }
+
+          // Extra large devices
+          @media all and (min-width: 1200px) and (max-width: 1439px) {
+            margin-top: -25px;
+            font-size: rem(230px);
+            line-height: rem(230px);
+          }
+        }
+      }
+    }
+
+    .feature-box {
+      width: calc(33% - 27px);
+      color: #fff;
+      //margin-top: 10%;
+      //margin-bottom: 80px;
+
+      &:last-child {
+        // Small devices
+        @media all and (max-width: 767px) {
+          margin-top: 0;
+        }
+
+        // Medium devices
+        @media all and (min-width: 768px) and (max-width: 991px) {
+          margin-top: 0;
+        }
+      }
+
+      p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      // Extra small & small devices
+      @media all and (max-width: 991px) {
+        width: 100%;
+        text-align: justify;
+        //margin-bottom: 20px;
+      }
+
+      // From extra small to medium devices
+      //@media all and (max-width: 991px) {
+      //    margin-bottom: 30px;
+      //}
+
+      //// Medium devices
+      //@media all and (min-width: 768px) and (max-width: 991px) {
+      //    width: calc(50% - 27px) !important;
+      //}
+
+      .feature-title {
+        font-weight: 700;
+        font-size: rem(36px);
+        line-height: rem(46px);
+        text-transform: uppercase;
+      }
+
+      .feature-description {
+        font-weight: normal;
+        font-size: rem(20px);
+        line-height: rem(28px);
+        margin-bottom: 35px;
+        display: block;
+      }
+
+      p {
+        font-size: rem(18px);
+        line-height: rem(28px);
+        margin-bottom: 30px;
+
+        // Extra small & small devices
+        @media all and (max-width: 767px) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

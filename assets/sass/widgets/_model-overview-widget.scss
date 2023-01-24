@@ -1,0 +1,567 @@
+.car-preview-widget {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  min-height: 570px;
+  background: url("https://via.placeholder.com/1920x1280") 50% 0 no-repeat;
+  margin-bottom: 70px;
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    margin-bottom: 85px;
+  }
+
+  @media all and (min-width: 992px) {
+    margin-bottom: 100px;
+  }
+
+  // small devices
+  @media all and (max-width: 767px) {
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  // Medium devices
+  @media all and (min-width: 768px) and (max-width: 1199px) {
+    height: 800px;
+  }
+
+  // Large devices
+  @media all and (min-width: 1200px) {
+    height: 1193px;
+    background-attachment: fixed;
+  }
+
+  .car-overview {
+    margin-top: -7%;
+    position: relative;
+
+    .car-overview--heading {
+      float: right;
+      width: 46%;
+      margin-top: 3%;
+      margin-bottom: 11%;
+      color: #fff;
+
+      // Medium devices
+      @media all and (max-width: 991px) {
+        float: none;
+        width: 80%;
+        margin: 0 auto 20% auto;
+      }
+
+      .heading-title {
+        display: block;
+        font-size: rem(30px);
+        line-height: rem(40px);
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: rem(40px);
+          line-height: rem(50px);
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: rem(50px);
+          line-height: rem(60px);
+        }
+      }
+
+      .heading-desc {
+        display: block;
+        font-size: rem(20px);
+        line-height: rem(24px);
+        font-weight: normal;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: rem(20px);
+          line-height: rem(24px);
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: rem(24px);
+          line-height: rem(28px);
+        }
+      }
+    }
+
+    .car-feature--wrapper {
+      position: relative;
+
+      img {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+
+        // Medium devices
+        @media all and (max-width: 991px) {
+          width: 90%;
+        }
+
+        // Large devices
+        @media all and (min-width: 992px) and (max-width: 1199px) {
+          width: 90%;
+        }
+
+        // Extra large devices
+        @media all and (min-width: 1200px) and (max-width: 1439px) {
+          width: 95%;
+        }
+      }
+
+      .model-tip {
+        position: absolute;
+        left: 0;
+
+        color: #fff;
+
+        @media all and (max-width: 767px) {
+          display: none;
+        }
+
+        // tip position #1
+        &.tip-position-1 {
+          left: 0;
+          bottom: 0;
+
+          @media all and (max-width: 767px) {
+            margin-bottom: -4%;
+            margin-left: 16%;
+          }
+
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            margin-bottom: -4%;
+            margin-left: 18%;
+          }
+
+          @media all and (min-width: 992px) {
+            margin-bottom: 0%;
+            margin-left: 23%;
+          }
+        }
+
+        // tip position #2
+        &.tip-position-2 {
+          left: 0;
+          top: 0;
+
+          @media all and (max-width: 767px) {
+            margin-top: 18%;
+            margin-left: 7%;
+          }
+
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            margin-top: -10%;
+            margin-left: 9%;
+          }
+
+          @media all and (min-width: 992px) {
+            margin-top: 14%;
+            margin-left: 7%;
+          }
+        }
+
+        // tip position #3
+        &.tip-position-3 {
+          right: 0;
+          top: 0;
+
+          @media all and (max-width: 767px) {
+            margin-top: 8%;
+            margin-right: 2%;
+          }
+
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            margin-top: -6%;
+            margin-right: 12%;
+          }
+
+          @media all and (min-width: 992px) {
+            margin-top: 18%;
+            margin-right: 10%;
+          }
+        }
+
+        // class modify for color of bullet
+        &.green--color {
+          .tip-bullet {
+            background: $success-color;
+            box-shadow: 0px 0px 12px 0px rgba(70, 238, 170, 0.7);
+
+            &:hover {
+              box-shadow: 0px 0px 15px 0px rgba(70, 238, 170, 1);
+            }
+          }
+        }
+
+        // class modify for color of bullet
+        &.orange--color {
+          .tip-bullet {
+            background: #dd8a4c;
+            box-shadow: 0px 0px 12px 0px rgba(221, 138, 76, 0.7);
+
+            &:hover {
+              box-shadow: 0px 0px 15px 0px rgba(221, 138, 76, 1);
+            }
+          }
+        }
+
+        // class modify for color of bullet
+        &.green--gradient {
+          .tip-text {
+            &:after {
+              @include gradient-horizontal($primary-color, $success-color);
+            }
+          }
+        }
+
+        // class modify for gradient
+        &.orange--gradient {
+          .tip-text {
+            &:after {
+              @include gradient-horizontal(#df8f4e, #f6ce5e);
+            }
+          }
+        }
+
+        .model-tip-inner {
+          position: relative;
+
+          // general styles for bullet
+          .tip-bullet {
+            border-radius: 99px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: box-shadow 300ms ease-in-out;
+            color: #fff;
+
+            &:hover {
+              cursor: default;
+            }
+
+            @media all and (max-width: 767px) {
+              width: 37px;
+              height: 37px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              width: 44px;
+              height: 44px;
+            }
+
+            @media all and (min-width: 992px) {
+              width: 52px;
+              height: 52px;
+            }
+
+            .plus-icn {
+              @media all and (max-width: 767px) {
+                font-size: 14px;
+              }
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                font-size: 16px;
+              }
+
+              @media all and (min-width: 992px) {
+                font-size: 18px;
+              }
+            }
+          }
+
+          // general styles for top text
+          .tip-text {
+            //color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            @media all and (max-width: 767px) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+
+            @media all and (min-width: 992px) {
+              font-size: 22px;
+              line-height: 26px;
+            }
+
+            &:after {
+              display: block;
+              content: "";
+              transition: all 300ms ease-in-out;
+              width: 60%;
+              height: 8px;
+              position: absolute;
+            }
+          }
+        }
+
+        // left-bottom-text class modificator for text position
+        &.left-bottom-text {
+          .tip-bullet {
+            float: right;
+
+            @media all and (max-width: 767px) {
+              margin-bottom: 16px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              margin-bottom: 19px;
+            }
+
+            @media all and (min-width: 992px) {
+              margin-bottom: 22px;
+            }
+          }
+
+          .tip-text {
+            clear: both;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            padding-left: 7px;
+
+            @media all and (max-width: 767px) {
+              padding-top: 17px;
+              padding-right: 20px;
+              margin-right: 17px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              padding-top: 20px;
+              padding-right: 24px;
+              margin-right: 22px;
+            }
+
+            @media all and (min-width: 992px) {
+              padding-top: 25px;
+              padding-right: 34px;
+              margin-right: 27px;
+            }
+
+            &:after {
+              margin-top: -7px;
+              margin-left: -7px;
+            }
+          }
+        }
+
+        // right-bottom-text class modificator for text position
+        &.right-bottom-text {
+          .tip-bullet {
+            float: left;
+
+            @media all and (max-width: 767px) {
+              margin-bottom: 16px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              margin-bottom: 19px;
+            }
+
+            @media all and (min-width: 992px) {
+              margin-bottom: 22px;
+            }
+          }
+
+          .tip-text {
+            clear: both;
+            border-bottom: 1px solid #fff;
+            border-left: 1px solid #fff;
+            padding-right: 7px;
+
+            @media all and (max-width: 767px) {
+              padding-top: 17px;
+              padding-left: 20px;
+              margin-left: 17px;
+            }
+
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              padding-top: 20px;
+              padding-left: 24px;
+              margin-left: 22px;
+            }
+
+            @media all and (min-width: 992px) {
+              padding-top: 25px;
+              padding-left: 34px;
+              margin-left: 27px;
+            }
+
+            &:after {
+              margin-top: -7px;
+              margin-right: -7px;
+              right: 0;
+            }
+          }
+        }
+
+        // right-top-text class modificator for text position
+        &.right-top-text {
+          .model-tip-inner {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .tip-bullet {
+              @media all and (max-width: 767px) {
+                margin-top: 16px;
+              }
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                margin-top: 19px;
+              }
+
+              @media all and (min-width: 992px) {
+                margin-top: 22px;
+              }
+            }
+
+            .tip-text {
+              //clear: both;
+              border-bottom: 1px solid #fff;
+              padding-right: 7px;
+              position: relative;
+
+              @media all and (max-width: 767px) {
+                margin-bottom: 38px;
+                padding-left: 20px;
+                margin-left: 17px;
+              }
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                margin-bottom: 40px;
+                padding-left: 24px;
+                margin-left: 22px;
+              }
+
+              @media all and (min-width: 992px) {
+                margin-bottom: 45px;
+                padding-left: 34px;
+                margin-left: 27px;
+              }
+
+              &:before {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 1px;
+
+                background: #fff;
+                content: "";
+                display: block;
+
+                @media all and (max-width: 767px) {
+                  height: 38px;
+                  margin-bottom: -38px;
+                }
+
+                @media all and (min-width: 768px) and (max-width: 991px) {
+                  height: 40px;
+                  margin-bottom: -40px;
+                }
+
+                @media all and (min-width: 992px) {
+                  height: 45px;
+                  margin-bottom: -45px;
+                }
+              }
+
+              &:after {
+                margin-top: -7px;
+                margin-right: -7px;
+                right: 0;
+              }
+            }
+          }
+        }
+
+        // left-top-text class modificator for text position
+        &.left-top-text {
+          .model-tip-inner {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+
+            .tip-bullet {
+              @media all and (max-width: 767px) {
+                margin-top: 16px;
+              }
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                margin-top: 19px;
+              }
+
+              @media all and (min-width: 992px) {
+                margin-top: 22px;
+              }
+            }
+
+            .tip-text {
+              //clear: both;
+              border-bottom: 1px solid #fff;
+              padding-right: 7px;
+              position: relative;
+
+              @media all and (max-width: 767px) {
+                margin-bottom: 38px;
+                padding-right: 20px;
+                margin-right: 17px;
+              }
+
+              @media all and (min-width: 768px) and (max-width: 991px) {
+                margin-bottom: 40px;
+                padding-right: 24px;
+                margin-right: 22px;
+              }
+
+              @media all and (min-width: 992px) {
+                margin-bottom: 45px;
+                padding-right: 34px;
+                margin-right: 27px;
+              }
+
+              &:before {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 1px;
+                background: #fff;
+                content: "";
+                display: block;
+
+                @media all and (max-width: 767px) {
+                  height: 38px;
+                  margin-bottom: -38px;
+                }
+
+                @media all and (min-width: 768px) and (max-width: 991px) {
+                  height: 40px;
+                  margin-bottom: -40px;
+                }
+
+                @media all and (min-width: 992px) {
+                  height: 45px;
+                  margin-bottom: -45px;
+                }
+              }
+
+              &:after {
+                margin-top: -7px;
+                margin-left: -7px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+// Tables
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+
+    thead {
+
+        tr {
+
+            th {
+                border: 1px solid $border-base;
+                font-family: $mainFont;
+                padding: 12px 15px 10px 15px;
+                color: $mainFontColor ;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 28px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    tbody {
+
+        tr {
+
+            td {
+                font-size: 16px;
+                line-height: 28px;
+                padding: 5px 15px;
+                border: 1px solid $border-base;
+            }
+
+            th {
+                border: 1px solid $border-base;
+                font-family: $mainFont;
+                padding: 12px 15px 10px 15px;
+                color: $mainFontColor ;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+
+.table-grey {
+    background: #f8f8f8;
+    color: $mainFontColor ;
+}
+
+.table-mint {
+    background: $primary-color;
+    color: #fff;
+
+    thead {
+
+        th {
+            color: #fff;
+        }
+    }
+
+    tbody {
+
+        th {
+            color: #fff;
+        }
+    }
+}

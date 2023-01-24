@@ -1,0 +1,57 @@
+// Media queries
+$retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+$media_xl: "(max-width: 1199px)";
+$media_lg: "(max-width: 991px)";
+$media_md: "(max-width: 767px)";
+$media_sm: "(max-width: 575px)";
+
+// Paths
+$img: "../i/";
+$fonts: "../fonts/";
+
+// Font
+$mainFont: "Poppins", sans-serif;
+$secondFont: "Work Sans", sans-serif;
+$thirdFont: "Dancing Script", cursive;
+
+// Size
+$mainFontColor: #1a1a1a;
+$secondaryFontColor: #3a3a3a;
+$mainFontSize: 16px;
+$mainFontWeight: 400;
+$mainLineHeight: 1.4;
+
+$desktopWidth: 1280px;
+$smDesktopWidth: 980px;
+$tableWidth: 768px;
+$phoneWidth: 480px;
+$smPhoneWidth: 320px;
+
+// Main color
+$default-color: #ffffff;
+$base-blue-color: #2196f3;
+$primary-color: #2cc0c7;
+$primary-darker-color: #17abb3;
+$success-color: #46eeaa;
+$danger-color: #fc5c65;
+$warning-color: #cca52b;
+$light-color: #999999;
+$purple-color: #8854d0;
+$light-grey: #828282;
+
+// Neutral Color
+$neutral-primary: #4b4f54;
+$neutral-regular: #979797;
+$neutral-secondary: #909399;
+$neutral-placeholder: #c0c4cc;
+
+// Border Color
+$border-base: #eaebeb;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+$border-lightex: #f2f6fc;
+
+// Transitions
+$transition300: all ease-in-out 300ms;
+
+$gutter-width: 15px;

@@ -1,0 +1,44 @@
+.header-top-line {
+    width: 100%;
+    max-width: 1775px;
+    margin: 0 auto;
+    display: flex;
+    height: 66px;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: rem(32px);
+            line-height: rem(32px);
+            font-weight: bold;
+
+            @media all and (min-width: 575px) and (max-width: 767px) {
+                font-size: rem(34px);
+                line-height: rem(34px);
+            }
+
+            @media all and (min-width: 768px) {
+                font-size: rem(36px);
+                line-height: rem(36px);
+            }
+
+            a {
+                font-weight: inherit;
+                transition: all 400ms ease-in-out;
+
+                &:hover {
+                    transition: all 400ms ease-in-out;
+                    color: $success-color;
+                }
+            }
+
+            &:first-letter {
+                color: $success-color;
+            }
+        }
+    }
+}

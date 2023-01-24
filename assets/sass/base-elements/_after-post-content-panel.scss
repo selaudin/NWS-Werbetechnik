@@ -1,0 +1,41 @@
+.after-post-content-panel {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    border-top: 1px solid #e1e1e1;
+    
+    .post-tags-list {
+        width: 80%;
+
+        @media all and (max-width: 480px) {
+            width: 70%;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            a {
+                color: $primary-color;
+                font-size: rem(16px);
+                transition: $transition300;
+                text-decoration: none;
+
+                &:hover {
+                    color: $mainFontColor;
+                }
+            }
+        }
+    }
+
+    .post-author-sign {
+        width: 20%;
+        text-align: right;
+        font-size: 23px;
+
+        @media all and (max-width: 480px) {
+            width: 30%;
+        }
+    }
+}

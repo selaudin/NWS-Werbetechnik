@@ -1,0 +1,131 @@
+.project-accordion {
+    border-top: 1px solid #eaebeb;
+
+
+
+    li {
+        border-bottom: 1px solid #eaebeb;
+
+        a.toggle {
+            padding-top: 25px;
+            padding-bottom: 25px;
+            font-weight: 500;
+            font-size: rem(22px);
+            line-height: rem(28px);
+            width: 100%;
+            display: block;
+            color: $mainFontColor;
+            transition: background .3s ease;
+            position: relative;
+
+            @media all and (max-width: 767px) {
+                font-size: rem(18px);
+                line-height: rem(22px);
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            &:after {
+                position: absolute;
+                top: calc(50% - 3px);
+                right: 0;
+                margin-right: 4px;
+                content: '';
+                width: 11px;
+                height: 7px;
+                background: url("#{$img}sprite.png") 0 0 no-repeat;
+            }
+
+            &.active {
+
+                &:after {
+                    position: absolute;
+                    top: calc(50% - 3px);
+                    right: 0;
+                    margin-right: 4px;
+                    content: '';
+                    width: 11px;
+                    height: 7px;
+                    background: url("#{$img}sprite.png") 0 -7px no-repeat;
+                }
+            }
+        }
+
+        .inner {
+            padding-left: 15px;
+            margin-bottom: 25px;
+            overflow: hidden;
+            display: none;
+
+
+            & > ul {
+                margin-top: -15px;
+                display: flex;
+                flex-wrap: wrap;
+
+                li {
+                    width: calc(50% - 9.5%);
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    margin-right: 9.5%;
+                    display: flex;
+                    align-items: center;
+
+                    // Small devices
+                    @media all and (max-width: 767px) {
+                        width: 100%;
+                        margin-right: 5%;
+                    }
+
+                    small {
+                        width: 50%;
+                        font-size: rem(16px);
+                        line-height: rem(22px);
+                        padding-right: 20px;
+
+                        @media all and (max-width: 767px) {
+                            width: 60%;
+                            font-size: rem(16px);
+                            line-height: rem(22px);
+                        }
+                    }
+
+                    span {
+                        width: 50%;
+                        font-size: rem(20px);
+                        line-height: rem(28px);
+                        padding-right: 10px;
+
+                        @media all and (max-width: 767px) {
+                            width: 40%;
+                            font-size: rem(16px);
+                            line-height: rem(22px);
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            & > .accordion-paragraphs-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+
+                p {
+                    font-size: rem(18px);
+                    line-height: rem(28px);
+                    font-weight: 400;
+                    width: calc(50% - 9.5%);
+                    margin-right: 9.5%;
+                    text-align: justify;
+                    margin-bottom: 15px;
+
+                    // Small devices
+                    @media all and (max-width: 767px) {
+                        width: 100%;
+                        margin-right: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

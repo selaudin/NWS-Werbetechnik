@@ -1,0 +1,19 @@
+.social-profiles-list {
+
+    li {
+        display: inline-block;
+        font-size: 17px;
+        margin-right: 30px;
+
+        a {
+            color: $mainFontColor;
+            transition: all 400ms ease-in-out;
+
+            &:hover {
+                opacity: 0.7;
+                color: $neutral-regular;
+                transition: all 400ms ease-in-out;
+            }
+        }
+    }
+}

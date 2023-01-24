@@ -1,0 +1,109 @@
+#comments {
+  .comments-heading {
+    font-size: rem(20px);
+    line-height: rem(30px);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .comments-list {
+    .comment {
+      .comment-wrap {
+        display: flex;
+        justify-content: left;
+        margin-bottom: 60px;
+
+        @media all and (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+
+        .user-pic {
+          flex-shrink: 0;
+          margin-right: 20px;
+
+          // Extra small devices
+          @media all and (max-width: 574px) {
+            width: 64px;
+            height: 64px;
+          }
+
+          // Small devices
+          @media all and (min-width: 575px) and (max-width: 991px) {
+            width: 89px;
+            height: 89px;
+          }
+
+          @media all and (min-width: 992px) {
+            width: 113px;
+            height: 113px;
+          }
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        .comment-body {
+          max-width: 740px;
+
+          .comment-body--top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .comment-author {
+              font-weight: 700;
+              text-transform: uppercase;
+              font-size: rem(16px);
+              line-height: rem(30px);
+            }
+
+            .comment-reply-link {
+              font-size: rem(14px);
+              line-height: rem(30px);
+              font-weight: normal;
+              text-transform: uppercase;
+              transition: color 300ms ease-in-out;
+              margin-right: 10px;
+
+              &:hover {
+                color: $primary-color;
+              }
+            }
+          }
+
+          .comment-body--bottom {
+            font-size: rem(18px);
+            line-height: rem(28px);
+          }
+        }
+      }
+    }
+
+    .child-comment {
+      // Small devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        margin-left: 109px;
+      }
+
+      @media all and (min-width: 992px) {
+        margin-left: 135px;
+      }
+    }
+  }
+
+  .comment-respond {
+    margin-top: 123px;
+
+    @media all and (max-width: 767px) {
+      margin-top: 80px;
+    }
+
+    .comment-message {
+      padding-top: 32px !important;
+      height: 60px !important;
+    }
+  }
+}

@@ -1,0 +1,214 @@
+.project-features-widget {
+  width: 100%;
+  background: url("https://via.placeholder.com/2040x870") 50% 50% no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: fixed;
+  padding: 100px $gutter-width * 2 80px $gutter-width * 2;
+
+  // Extra small
+  @media all and (max-width: 574px) {
+    padding: 80px 2px 60px 2px;
+  }
+
+  // Small devices
+  @media all and (min-width: 575px) and (max-width: 767px) {
+    padding: 85px 4px 70px 4px;
+  }
+
+  // Medium devices
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    padding: 95px $gutter-width * 2 80px $gutter-width * 2;
+  }
+
+  // Large devices
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    padding: 95px $gutter-width * 2 80px $gutter-width * 2;
+  }
+
+  // Extra large devices
+  @media all and (min-width: 1200px) and (max-width: 1439px) {
+    padding: 105px $gutter-width * 2 40px $gutter-width * 2;
+  }
+
+  @media only screen and (max-device-width: 1366px) {
+    background-attachment: scroll;
+  }
+
+  .project-features-inner {
+    max-width: 1490px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    // Extra small & small devices
+    @media all and (max-width: 767px) {
+      justify-content: center;
+    }
+
+    .feature-box {
+      width: calc(33% - 40px);
+      display: flex;
+      color: #fff;
+      margin-bottom: 6%;
+
+      @media all and (max-width: 574px) {
+        width: calc(100% - 40px);
+        margin-bottom: 50px;
+      }
+
+      // Small devices
+      @media all and (min-width: 575px) and (max-width: 767px) {
+        width: calc(100% - 40px);
+        margin-bottom: 50px;
+      }
+
+      // Medium devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        margin-top: 3%;
+        width: calc(50% - 40px);
+        margin-bottom: 50px;
+      }
+
+      // Large devices
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        width: calc(50% - 40px);
+        margin-bottom: 50px;
+      }
+
+      @media all and (min-width: 1200px) {
+        margin-top: 1%;
+      }
+
+      .masking-text {
+        // Extra small & small devices
+        @media all and (max-width: 767px) {
+          width: 100%;
+          text-align: center;
+        }
+
+        span {
+          display: inline-block;
+          font-size: rem(260px);
+          line-height: rem(260px);
+          background: url("#{$img}car-mask.png") left top no-repeat;
+          background-size: cover;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          font-weight: 700;
+          position: relative;
+          text-shadow: 1px 1px 10px rgba(70, 221, 175, 0.6);
+
+          // Medium devices
+          @media all and (max-width: 499px) {
+            font-size: rem(150px);
+            line-height: rem(150px);
+          }
+
+          @media all and (min-width: 500px) and (max-width: 767px) {
+            font-size: rem(190px);
+            line-height: rem(190px);
+          }
+
+          // Medium devices
+          @media all and (min-width: 768px) and (max-width: 991px) {
+            font-size: rem(200px);
+            line-height: rem(200px);
+          }
+
+          // Extra large devices
+          @media all and (min-width: 1200px) and (max-width: 1439px) {
+            font-size: rem(220px);
+            line-height: rem(220px);
+          }
+
+          // Extra large devices
+          @media all and (min-width: 1440px) and (max-width: 1599px) {
+            font-size: rem(220px);
+            line-height: rem(220px);
+          }
+        }
+      }
+
+      img {
+        display: inline-block;
+        margin-right: 20px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .feature1 {
+        @include size(83px);
+      }
+      .feature2 {
+        @include size(84px);
+      }
+      .feature3 {
+        @include size(93px, 91px);
+      }
+      .feature4 {
+        @include size(90px, 86px);
+      }
+      .feature5 {
+        @include size(81px, 90px);
+      }
+
+      .feature-title {
+        font-size: rem(20px);
+        line-height: rem(30px);
+        font-weight: 700;
+        max-width: 250px;
+        margin-bottom: 17px;
+        margin-top: 12px;
+        text-transform: uppercase;
+        word-break: break-word;
+
+        // Small devices
+        @media all and (max-width: 767px) {
+          margin-top: 3px;
+        }
+      }
+
+      .feature-description {
+        font-size: rem(18px);
+        line-height: rem(28px);
+      }
+    }
+
+    .masking-text-wrap {
+      margin-top: 2.5%;
+
+      // Medium devices
+      @media all and (min-width: 768px) and (max-width: 991px) {
+        align-self: flex-start;
+        margin-top: 0;
+      }
+
+      // Large devices
+      @media all and (min-width: 992px) and (max-width: 1199px) {
+        margin-top: 0;
+        margin-bottom: 5.5%;
+      }
+
+      // Extra large devices
+      @media all and (min-width: 1200px) and (max-width: 1439px) {
+        margin-top: -10px;
+        //margin-bottom: 10%;
+        align-self: flex-start;
+      }
+
+      // Extra large devices
+      @media all and (min-width: 1440px) and (max-width: 1599px) {
+        margin-top: -10px;
+        align-self: flex-start;
+      }
+    }
+  }
+}

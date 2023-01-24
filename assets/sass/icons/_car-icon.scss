@@ -1,0 +1,16 @@
+.car-icon {
+  display: block;
+  fill: #fff;
+  width: 18px;
+  height: 18px;
+
+  @media all and (min-width: 575px) and (max-width: 767px) {
+    width: 19px;
+    height: 19px;
+  }
+
+  @media all and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
+}

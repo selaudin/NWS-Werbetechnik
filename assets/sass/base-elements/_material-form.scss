@@ -1,0 +1,125 @@
+.material-form {
+  overflow: hidden;
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .material-text-input {
+    width: 100%;
+    height: 32px;
+    border: none;
+    border-bottom: 1px solid $mainFontColor;
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    color: $light-grey;
+    font-weight: 300;
+    transition: $transition300;
+
+    &:focus {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+
+  .custom-select-container {
+    &.is-open {
+      .custom-select-opener {
+        border-bottom: 1px solid $primary-color;
+      }
+    }
+
+    .custom-select-opener {
+      background-color: transparent;
+      padding-top: 10px;
+      padding: 0;
+      border-bottom: 1px solid $mainFontColor;
+      font-size: 14px;
+      color: $light-grey;
+      font-weight: 300;
+      transition: $transition300;
+
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border-left: 1px solid $light-grey;
+        border-bottom: 1px solid $light-grey;
+        transform: rotate(-45deg);
+        position: absolute;
+        top: 11px;
+        right: 10px;
+        pointer-events: none;
+      }
+    }
+
+    .custom-select-option {
+      background-color: #fafafa;
+      z-index: 1;
+      padding: 10px;
+      box-shadow: 0 4px 5px #0003;
+      font-size: 14px;
+      color: $mainFontColor;
+      font-weight: 300;
+      padding: 3px 10px;
+
+      &.is-selected {
+        &:before {
+          content: "";
+          padding-right: 0;
+        }
+
+        color: $primary-color;
+      }
+    }
+  }
+
+  .material-custom-textarea {
+    height: 32px;
+    overflow: hidden;
+    border: 0;
+    outline: 0;
+    resize: none;
+    border-bottom: 1px solid $mainFontColor;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 14px;
+    color: $light-grey;
+    font-weight: 300;
+    transition: $transition300;
+
+    &:focus {
+      border-bottom: 1px solid $primary-color;
+    }
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: $light-grey;
+    }
+
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: $light-grey;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: $light-grey;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10+ */
+      color: $light-grey;
+    }
+  }
+}

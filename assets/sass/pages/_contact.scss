@@ -1,0 +1,203 @@
+#contact-page {
+  padding-bottom: 70px;
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    padding-bottom: 85px;
+  }
+
+  @media all and (min-width: 992px) {
+    padding-bottom: 100px;
+  }
+}
+
+#contact-us-background {
+  background-image: url("https://via.placeholder.com/1920x500");
+}
+
+.contact-section {
+  padding-top: 70px;
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    padding-top: 85px;
+  }
+
+  @media all and (min-width: 992px) {
+    padding-top: 100px;
+  }
+
+  .contact-title-box {
+    h3 {
+      color: $mainFontColor;
+      line-height: 1.2;
+      text-transform: uppercase;
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    span {
+      font-size: 20px;
+      line-height: 1.2;
+      color: $mainFontColor;
+      margin-left: 3px;
+      display: block;
+    }
+  }
+
+  .contact-info-box {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+
+    .contact-left-side {
+      width: 100%;
+      max-width: 761px;
+
+      .contact-information {
+        width: 100%;
+
+        .contact-table-wrap {
+          overflow-x: auto;
+        }
+
+        table {
+          margin: 0;
+          word-break: break-all;
+          border-collapse: collapse;
+          overflow-x: auto;
+          display: block;
+          width: fit-content;
+          max-width: 100%;
+          min-width: 510px;
+
+          tr {
+            display: block;
+            // Extra small devises
+            @media all and (min-width: 320px) and (max-width: 574px) {
+              margin-bottom: 25px;
+            }
+
+            // Small devices
+            @media all and (min-width: 575px) and (max-width: 767px) {
+              margin-bottom: 30px;
+            }
+
+            // Medium devices
+            @media all and (min-width: 768px) and (max-width: 991px) {
+              margin-bottom: 45px;
+            }
+
+            // Large devices
+            @media all and (min-width: 992px) and (max-width: 1199px) {
+              margin-bottom: 55px;
+            }
+
+            // Extra large devices
+            @media all and (min-width: 1200px) {
+              margin-bottom: 85px;
+            }
+
+            th {
+              width: 30%;
+              padding: 0;
+              text-align: left;
+              text-transform: uppercase;
+              color: $mainFontColor;
+              font-weight: 700;
+              font-size: rem(18px);
+              line-height: rem(30px);
+              border: 0;
+
+              // general media query to tablet
+              @media all and (max-width: 767px) {
+                font-size: rem(16px);
+                line-height: rem(26px);
+              }
+
+              @media all and (min-width: 320px) and (max-width: 574px) {
+                width: 33%;
+              }
+
+              // Small devices
+              @media all and (min-width: 575px) and (max-width: 767px) {
+                width: 33%;
+              }
+            }
+
+            td {
+              width: 525px;
+              padding: 0;
+              border: 0;
+
+              & > div {
+                display: flex;
+                margin-bottom: 3px;
+              }
+
+              .info-title {
+                font-weight: 500;
+                font-size: rem(16px);
+                line-height: rem(30px);
+                color: $mainFontColor;
+                max-width: 27%;
+                width: 100%;
+                display: inline-block;
+                text-transform: uppercase;
+
+                // general media query to tablet
+                @media all and (max-width: 767px) {
+                  font-size: rem(15px);
+                  line-height: rem(25px);
+                }
+              }
+
+              .info-data {
+                display: inline-block;
+                font-weight: 300;
+                font-size: rem(18px);
+                line-height: rem(28px);
+
+                // general media query to tablet
+                @media all and (max-width: 767px) {
+                  font-size: rem(16px);
+                  line-height: rem(26px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .contact-box {
+        // Small devices
+        @media all and (max-width: 767px) {
+          margin-top: 25px;
+        }
+
+        h4 {
+          font-size: rem(20px);
+          line-height: rem(30px);
+          font-weight: 700;
+          color: $mainFontColor;
+          text-transform: uppercase;
+          margin-bottom: 35px;
+
+          @media all and (max-width: 767px) {
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+
+    .contact-right-side {
+      width: 100%;
+      max-width: 36%;
+      padding: 2px 0 0 15px;
+      display: none;
+
+      @media all and (min-width: 992px) {
+        display: block;
+      }
+    }
+  }
+}

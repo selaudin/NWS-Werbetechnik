@@ -1,0 +1,114 @@
+.model-desription-widget {
+  & .model-feature-block:first-child {
+    padding-top: 20px;
+  }
+
+  & .model-feature-block:nth-child(even) {
+    background-color: #f7f7f7;
+  }
+
+  .widget-line-left {
+    & > .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .model-feature-text {
+      @media all and (min-width: 768px) {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  .widget-line-right {
+    & > .wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+    }
+
+    .model-feature-text {
+      @media all and (min-width: 768px) {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .widget-line-left,
+  .widget-line-right {
+    .model-feature-text {
+      @media all and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .model-feature-block {
+    padding: 70px 0;
+
+    .model-feature-text {
+      width: 100%;
+
+      @media all and (min-width: 768px) {
+        width: 50%;
+      }
+
+      .model-feature-title {
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        word-wrap: break-word !important;
+        color: $mainFontColor;
+        position: relative;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+
+        @media all and (min-width: 575px) and (max-width: 991px) {
+          font-size: 30px;
+        }
+
+        @media all and (min-width: 992px) {
+          font-size: 30px;
+        }
+
+        &:before {
+          content: "";
+          position: absolute;
+          width: 53px;
+          height: 1px;
+          background-color: $mainFontColor;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      .model-feature-description {
+        color: $light-grey;
+        font-size: 16px;
+        line-height: 1.4;
+        font-weight: 300;
+
+        @media all and (max-width: 767px) {
+        }
+      }
+    }
+
+    .model-preview-box {
+      width: 100%;
+
+      @media all and (min-width: 768px) {
+        width: 50%;
+      }
+
+      .model-preview-image {
+        max-width: 600px;
+      }
+    }
+  }
+}

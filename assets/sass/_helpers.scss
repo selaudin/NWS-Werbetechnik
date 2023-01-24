@@ -1,0 +1,197 @@
+// Active loading class
+.loading {
+  overflow: hidden;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+//Owl carousel
+:root {
+  --main-white-color: white;
+  --main-black-color: black;
+}
+
+.static {
+  position: static;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// helpers clasees
+.fz16 {
+  font-size: 16px !important;
+}
+
+.mw575 {
+  @media all and (min-width: 1775px) {
+    max-width: 575px !important;
+  }
+}
+
+.flexList {
+  @media all and (min-width: 1775px) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+      width: 50%;
+    }
+  }
+}
+
+.font_one {
+  font-family: $mainFont;
+}
+
+.font_two {
+  font-family: $secondFont;
+}
+
+.font_third {
+  font-family: $thirdFont;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
+.mb-0-i {
+  margin-bottom: 0 !important;
+}
+
+.md-mr10 {
+  margin-right: 10px;
+}
+
+@media all and (max-width: 767px) {
+  .sm-mr0 {
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .sm-ml10 {
+    margin-left: 10px;
+  }
+}
+
+.mt8dot5-imp {
+  margin-top: 8.5% !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+// margin top 11% persent
+.mt-11-persent {
+  margin-top: 11%;
+}
+
+// margin bottom 10 persent
+.mb-10-persent {
+  margin-bottom: 10%;
+}
+
+// margin top 3% persent
+.mt-3-persent {
+  margin-top: 3%;
+}
+
+// margin bottom 3% persent
+.mb-3-persent {
+  margin-bottom: 3%;
+}
+
+// margin top 5% persent
+.mt-5-persent {
+  margin-top: 5%;
+}
+
+// margin bottom 5% persent
+.mb-5-persent {
+  margin-bottom: 5%;
+}
+
+// margin top 10% persent
+.mt-10-persent {
+  margin-top: 10%;
+}
+
+// margin bottom 10% persent
+.mb-10-persent {
+  margin-bottom: 10%;
+}
+
+// margin top 15% persent
+.mt-15-persent {
+  margin-top: 15%;
+}
+
+// margin bottom 15% persent
+.mb-15-persent {
+  margin-bottom: 15%;
+}
+
+// hide
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+// bg
+.bg-white {
+  background: #fff;
+}
+
+.bg-transperant {
+  background-color: transparent;
+}
+
+.p5-persent {
+  padding: 5%;
+}
+
+.mb-18-px {
+  margin-bottom: 18px;
+}
+
+.play-btn-big {
+  width: 82px;
+  height: 82px;
+
+  // Small devices
+  @media all and (max-width: 574px) {
+    width: 52px;
+    height: 52px;
+  }
+
+  // Medium devices
+  @media all and (min-width: 575px) and (max-width: 991px) {
+    width: 62px;
+    height: 62px;
+  }
+}
+
+.pt-32 {
+  padding-top: 32px;
+}
+
+.mt-32 {
+  margin-top: 32px;
+}
+
+.text-center {
+  text-align: center;
+}

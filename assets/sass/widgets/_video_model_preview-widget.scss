@@ -1,0 +1,254 @@
+.v-header {
+  position: relative;
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc((var(--vh, 1vh) * 100) - 71px);
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 70px;
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    margin-bottom: 85px;
+  }
+
+  @media all and (min-width: 992px) {
+    margin-bottom: 100px;
+  }
+
+  .fullscreen-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    video,
+    img {
+      object-fit: cover;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+
+  .header-overlay {
+    width: 100%;
+    height: calc((var(--vh, 1vh) * 100) - 71px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 1;
+    opacity: 0.45;
+  }
+
+  .owl-slide-text-container {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+    z-index: 1;
+
+    @media all and (min-width: 320px) and (max-width: 574px) {
+      max-width: 80%;
+      padding-right: 30px;
+    }
+
+    @media all and (min-width: 575px) and (max-width: 767px) {
+      max-width: 70%;
+      padding-right: 15px;
+    }
+
+    @media all and (min-width: 768px) {
+      max-width: 500px;
+    }
+  }
+
+  .owl-slide-title {
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    word-wrap: break-word !important;
+    color: #fff;
+    position: relative;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+
+    @media all and (min-width: 575px) and (max-width: 991px) {
+      font-size: 40px;
+    }
+
+    @media all and (min-width: 992px) {
+      font-size: 46px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 1px;
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .owl-slide-subtitle {
+    font-size: 15px;
+    display: block;
+    margin-top: 10px;
+    line-height: 1.4;
+    color: #fff;
+    text-transform: uppercase;
+    word-wrap: break-word !important;
+
+    @media all and (min-width: 575px) and (max-width: 991px) {
+      font-size: 17px;
+    }
+
+    @media all and (min-width: 992px) {
+      font-size: 18px;
+    }
+  }
+
+  .slide-action-btn {
+    margin-top: 20px;
+  }
+}
+
+.v-wrap {
+  text-align: center;
+}
+
+.model-features-list-wrapper {
+  position: relative;
+}
+
+.model-features-list {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  left: 50%;
+  transform: translate(-50%, 0%);
+
+  @media all and (max-width: 574px) {
+    display: none;
+  }
+
+  // Small devices
+  @media all and (min-width: 575px) and (max-width: 767px) {
+    width: 540px;
+    margin-bottom: 3vh;
+  }
+
+  // Medium devices
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    width: 720px;
+    margin-bottom: 7vh;
+  }
+
+  // Large devices
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    width: 960px;
+    margin-bottom: 5vh;
+  }
+
+  // Extra large devices
+  @media all and (min-width: 1200px) {
+    width: 1200px;
+    margin-bottom: 5vh;
+  }
+
+  li {
+    margin-right: 20px;
+
+    @media all and (min-width: 575px) and (max-width: 1199px) {
+      width: calc(33.33333% - 20px);
+      max-width: 170px;
+    }
+
+    &:nth-child(3n) {
+      @media all and (min-width: 575px) and (max-width: 1199px) {
+        margin-right: 0;
+      }
+
+      .model-feature-item {
+        &:before {
+          @media all and (min-width: 575px) and (max-width: 991px) {
+            content: "";
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            position: static;
+          }
+        }
+      }
+    }
+
+    &:last-child {
+      .model-feature-item {
+        &:before {
+          content: none;
+        }
+      }
+    }
+
+    .model-feature-item {
+      display: flex;
+      margin-bottom: 30px;
+      position: relative;
+
+      @media all and (min-width: 1200px) {
+        padding-right: 20px;
+      }
+
+      &:before {
+        @media all and (min-width: 575px) {
+          content: "";
+          background-color: #fff;
+          width: 1px;
+          height: 48px;
+          position: absolute;
+          top: 5px;
+          right: 0;
+        }
+      }
+
+      .feature-icon {
+        margin-top: 5px;
+        margin-right: 10px;
+
+        svg path {
+          fill: #fff;
+        }
+      }
+
+      .feature-text {
+        .feature-title {
+          color: #fff;
+          font-weight: 400;
+          font-size: 32px;
+          text-transform: uppercase;
+          line-height: 1.15;
+          font-weight: 600;
+
+          small {
+            font-size: 15px;
+          }
+        }
+
+        .feature-subtitle {
+          color: #fff;
+          font-size: 15px;
+          display: block;
+          line-height: 1.2;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}

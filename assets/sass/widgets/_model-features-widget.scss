@@ -1,0 +1,326 @@
+.model-features-widget {
+
+    .owl-theme .owl-nav [class*=owl-] {
+        margin: 0;
+    }
+
+    .simple-page-heading {
+
+        .heading-title {
+            font-weight: 800;
+            margin: 0;
+        }
+    }
+
+    .model-features-wrapper {
+        margin-top: 9%;
+
+
+        .model-features-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            // Medium devices
+            @media all and (max-width: 991px) {
+                flex-direction: column;
+            }
+
+            .model-features-top-left {
+                max-width: 56%;
+                width: 100%;
+
+                // Extra small devices
+                @media all and (max-width: 574px) {
+                    max-width: 100%;
+                }
+
+                // Small devices
+                @media all and (min-width: 575px) and (max-width: 767px) {
+                    max-width: 80%;
+                }
+
+                // Medium devices
+                @media all and (min-width: 768px) and (max-width: 991px) {
+                    max-width: 80%;
+                }
+
+                // Large devices
+                @media all and (min-width: 992px) and (max-width: 1199px) {
+                    max-width: 50%;
+                }
+
+                .color-1c3648 {
+                    background: #1c3648;
+                }
+
+                .color-8f9192 {
+                    background: #8f9192;
+                }
+
+                .color-f21a1a {
+                    background: #f21a1a;
+                }
+
+                .color-040b10 {
+                    background: #040b10;
+                }
+
+                .color-064803 {
+                    background: #064803;
+                }
+
+                .color-4e4e4e {
+                    background: #4e4e4e;
+                }
+
+                .color-1c3648 {
+                    background: #1c3648;
+                }
+
+                .color-filter {
+                    max-width: 400px;
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px auto 0 auto;
+                    padding: 0 50px;
+                    position: relative;
+
+                    @media all and (max-width: 574px) {
+                        width: 100%;
+                        margin: 10px auto 10px auto;
+                    }
+
+                    @media all and (min-width: 575px) and (max-width: 991px) {
+                        width: 80%;
+                        margin: 40px auto 40px auto;
+                    }
+
+                    .model-tab {
+                        width: 42px;
+                        height: 42px;
+                        border-radius: 99px;
+                        margin: 0 auto;
+
+                        @media all and (max-width: 991px) {
+                            width: 38px;
+                            height: 38px;
+                        }
+
+                        &.active {
+
+                            &:after {
+                                padding-top: 2px;
+                                font-size: rem(13px);
+                                height: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                content: '\f00c';
+                                font-family: 'Font Awesome 5 Free';
+                                color: #fff;
+
+                                @media all and (max-width: 991px) {
+                                    padding-top: 0;
+                                    font-size: rem(11px);
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .owl-nav {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 3;
+                        pointer-events: none;
+
+                        // Extra small devices
+                        @media all and (max-width: 574px) {
+                            margin-top: 10px;
+                        }
+
+                        // Small devices
+                        @media all and (min-width: 575px) and (max-width: 767px) {
+                            margin-top: 10px;
+                        }
+
+                        // Medium devices
+                        @media all and (min-width: 768px) and (max-width: 991px) {
+                            margin-top: 10px;
+                        }
+
+                        // Large devices
+                        @media all and (min-width: 992px) and (max-width: 1199px) {
+                            margin-top: 3%
+                        }
+
+                        button {
+                            pointer-events: visible;
+
+                            &:hover {
+                                background: transparent;
+                            }
+
+                            svg {
+                                fill: $mainFontColor;
+                                opacity: 1;
+                                transition: opacity 300ms ease-in-out;
+
+                                &:hover {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        .owl-prev {
+                            margin-left: 20px;
+                        }
+
+                        .owl-next {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            .model-features-top-right {
+                max-width: 44%;
+                width: 100%;
+
+                // Extra small devices
+                @media all and (max-width: 574px) {
+                    max-width: 100%;
+                    margin-top: 10%;
+                }
+
+                // Small devices
+                @media all and (min-width: 575px) and (max-width: 767px) {
+                    max-width: 100%;
+                    margin-top: 10%;
+                }
+
+                // Medium devices
+                @media all and (min-width: 768px) and (max-width: 991px) {
+                    max-width: 100%;
+                    margin-top: 10%;
+                }
+
+                // Large devices
+                @media all and (min-width: 992px) and (max-width: 1199px) {
+                    max-width: 50%;
+                }
+
+                .model-details {
+                    width: calc(100% - 105px);
+                    float: right;
+                    display: block;
+                    $border: 3px;
+                    padding: 0 0 10% 5px;
+                    z-index: 2;
+                    background: #fff;
+                    border-bottom: solid $border transparent;
+                    background-clip: padding-box;
+                    position: relative;
+
+                    // Large devices
+                    @media all and (min-width: 992px) and (max-width: 1199px) {
+                        width: calc(100% - 65px);
+                    }
+
+                    // Medium devices
+                    @media all and (max-width: 991px) {
+                        width: 100%;
+                    }
+
+                    &:before {
+                        width: 100%;
+                        height: 3px;
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: -1;
+                        margin-bottom: -2px;
+                        background: linear-gradient(to right, #2cbfc7, #33ccc0, #46eeaa);
+                    }
+
+                    .technical-details-box {
+
+
+                        .technical-details-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            dt {
+                                width: 45%;
+                                font-size: 17px;
+                                line-height: normal;
+                                margin-bottom: 10px;
+                                font-weight: 600;
+
+                                @media all and (max-width: 767px) {
+                                    width: 50%;
+                                }
+                            }
+
+                            dd {
+                                width: 55%;
+                                font-size: 17px;
+                                line-height: normal;
+                                margin-bottom: 10px;
+                                font-weight: 400;
+
+                                @media all and (max-width: 767px) {
+                                    width: 50%;
+                                }
+                            }
+                        }
+                    }
+
+                    .battery-box {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 28px;
+
+                        img {
+                            display: inline-block;
+                            width: 30px;
+                            height: 35px;
+                        }
+
+                        .battery-info {
+
+                            span {
+                                display: block;
+                                font-size: rem(16px);
+                                line-height: rem(18px);
+                                color: $mainFontColor;
+                                margin-left: 15px;
+
+                                @media all and (max-width: 767px) {
+                                    font-size: rem(15px);
+                                    line-height: rem(17px);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .model-features-bottom {
+            margin-top: 10%;
+        }
+    }
+}
