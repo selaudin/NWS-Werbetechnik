@@ -17,7 +17,7 @@ document.write(`
 
             <li>
               <i class="fas fa-map-marker-alt"></i>
-              <span class="font_two">Nordstrasse 14, 4665 Oftringen</span>
+              <span class="font_two">Nordstrasse 14, 4665 Oftringen <br>(beim YouCenter)</span>
             </li>
           </ul>
         </div>
@@ -32,7 +32,7 @@ document.write(`
   </section>
 
   <section class="footer-bottom">
-    <div class="header-overlay2"></div>
+    <div class="header-overlay1"></div>
       <div class="copyright font_two wow fadeInUp" data-wow-offset="-100">
         &copy; 2023 NWS WERBETECHNICK <a href="https://www.simplweb.ch" target="_blank">| SA</a>
       </div>

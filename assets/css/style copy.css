@@ -12895,9 +12895,8 @@ option {
 
 @media all and (max-width:574px) {
   .project-features-widget .project-features-inner .feature-box {
-    width: calc(100% - 20px);
-    margin-bottom: 50px;
-    margin-left: 0px;
+    width: calc(100% - 40px);
+    margin-bottom: 50px
   }
 }
 
@@ -12926,54 +12925,22 @@ option {
     min-height: 600px !important;
     margin-top: 1%
   }
-
-  .box-short1 {
-    min-height: 450px !important;
-    margin-top: 1%
-  }
-
-  .box-short3 {
-    min-height: 450px !important;
-    margin-top: 1%
-  }
-}
-
-
-@media all and (min-width:1200px) and (max-width:1450px) {
   .box-short {
-    min-height: 500px !important;
+    min-height: 600px !important;
     margin-top: 1%
-  }
-
-  .box-short1 {
-    min-height: 560px !important;
-    margin-top: 1%
-  }
-
-  .box-short3 {
-    min-height: 480px !important;
-    margin-top: 1%;
-    width: calc(33% - 10px) !important;
   }
 }
 
-@media all and (min-width:1450px) {
+
+@media all and (min-width:1200px) {
   .project-features-widget .project-features-inner .feature-box {
-    min-height: 550px;
+    min-height: 600px;
     margin-top: 1%
   }
+}
 
+@media all and (min-width:1200px) {
   .box-short {
-    min-height: 450px !important;
-    margin-top: 1%
-  }
-
-  .box-short1 {
-    min-height: 480px !important;
-    margin-top: 1%
-  }
-
-  .box-short3 {
     min-height: 450px !important;
     margin-top: 1%
   }
@@ -13109,13 +13076,6 @@ option {
 .project-features-widget .project-features-inner .feature-box .feature-description {
   font-size: 1rem;
   line-height: 1.75rem
-}
-
-@media all and (min-width:0px) and (max-width:768px) {
-  .project-features-widget .project-features-inner .feature-box .feature-description {
-    font-size: 0.9rem;
-    line-height: 1.75rem
-  }
 }
 
 @media all and (min-width:768px) {
@@ -18662,13 +18622,6 @@ option {
   opacity: .8;
 }
 
-@media all and (min-width:0px) and (max-width:767px) {
-  .undertext{
-    text-align: inherit !important;
-    font-size: 20px !important;
-  }
-}
-
 .undertext{
   text-align: justify;
   display: block;
@@ -18761,7 +18714,7 @@ option {
   text-transform: uppercase;
   margin-bottom: 0;
   word-wrap: break-word !important;
-  color: bisque;
+  color: #fff;
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
@@ -18770,8 +18723,8 @@ option {
 
 @media all and (max-width:991px) {
   .v-header .owl-slide-title {
-    font-size: 43px;
-    margin-top: 430px;
+    font-size:58px;
+    margin-top: 300px;
   }
 }
 
@@ -18932,10 +18885,6 @@ option {
 
 .model-features-list li .model-feature-item .feature-icon svg path {
   fill: #fff
-}
-
-.model-features-list li .model-feature-item .feature-text {
-  margin-right: 10px;
 }
 
 .model-features-list li .model-feature-item .feature-text .feature-title {
