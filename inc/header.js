@@ -25,7 +25,7 @@ document.write(`
             <a href="./index.html" style='text-size: 14px'>Home</a>
           </li>
           <li>
-            <a href="./nws-folierung.html">NWS Folierung</a>
+            <a href="./nws-folierung.html">NWS Folierungen</a>
           </li>
           <li>
             <a href="./nws-werbetechnik.html">NWS Werbetechnik</a>
