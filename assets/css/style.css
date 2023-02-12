@@ -18717,14 +18717,17 @@ option {
 
 @media all and (min-width:575px) and (max-width:767px) {
   .v-header .owl-slide-text-container {
-    max-width: 70%;
-    padding-right: 15px
+    max-width: 90%;
+    padding-right: 15px;
+    top: 15% !important
   }
 }
 
 @media all and (min-width:768px) {
   .v-header .owl-slide-text-container {
     max-width: 960px;
+    padding-right: 60px;
+
   }
 }
 
@@ -18768,10 +18771,34 @@ option {
   margin-top: 200px;
 }
 
-@media all and (max-width:991px) {
+
+@media all and (max-width:760px) {
   .v-header .owl-slide-title {
     font-size: 43px;
     margin-top: 130px;
+  }
+
+  .nws-title {
+    margin-top: 300px !important;
+  }
+
+  .nws-title1 {
+    margin-top: 380px !important;
+  }
+}
+
+@media all and (min-width:761px) and (max-width:991px) {
+  .v-header .owl-slide-title {
+    font-size: 73px;
+    margin-top: 130px;
+  }
+
+  .nws-title {
+    margin-top: 300px !important;
+  }
+
+  .nws-title1 {
+    margin-top: 370px !important;
   }
 }
 
@@ -20117,6 +20144,10 @@ hero-widget-center:before{
 .wrapper {
   margin: 0 auto;
   padding: 0 15px
+}
+
+.burger-menu{
+  padding-right: 15px;
 }
 
 @media all and (max-width:575px) {

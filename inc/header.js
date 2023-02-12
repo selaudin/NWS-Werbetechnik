@@ -16,7 +16,7 @@ document.write(`
 </div>
 
 <div class="main-header--bottom">
-  <div class="wrapper">
+  <div class="burger-menu">
     <div class="main-header-bottom-wrapper">
       <!-- Main menu -->
       <nav id="main-menu-2">
