@@ -18774,7 +18774,12 @@ option {
 
 @media all and (max-width:760px) {
   .v-header .owl-slide-title {
-    font-size: 53px;
+    font-size: 50px;
+    margin-top: 130px;
+  }
+
+  .v-header .owl-slide-title1 {
+    font-size: 43px;
     margin-top: 130px;
   }
 
