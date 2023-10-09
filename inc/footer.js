@@ -44,6 +44,9 @@ document.write(`
         <li>
           <a href="https://www.instagram.com/nws_folierungen/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
         </li>
+        <li>
+          <a href="./agb.html" target="_blank">AGB</a>
+        </li>
       </ul>
       </div>
 
