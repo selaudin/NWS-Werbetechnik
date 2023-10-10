@@ -6353,7 +6353,7 @@
 .owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 .owl-carousel .owl-dots.disabled,
@@ -12612,7 +12612,7 @@ option {
 .about-us-widget .about-right-side .about-right-side-top .about-widget-title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 40px;
   line-height: 1.2;
   margin-bottom: 20px
 }
@@ -12624,7 +12624,7 @@ option {
 }
 
 .about-us-widget .about-right-side .about-right-side-top .about-widget-description {
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 1rem;
   line-height: 1.75rem;
 }
@@ -18677,7 +18677,7 @@ option {
   color: #fff;
   /* text-transform: uppercase; */
   word-wrap: break-word !important;
-  font-size: 23px;
+  font-size: 17px;
 }
 
 .header-overlay2 {
@@ -18739,7 +18739,7 @@ option {
 
 .indexButton1{
   position: absolute; 
-  top: 70%; 
+  top: 69%; 
   left: 50%; 
   transform: translate(-50%, -50%);
 }
@@ -18768,7 +18768,7 @@ option {
   position: relative;
   margin-bottom: 15px;
   padding-bottom: 15px;
-  margin-top: 200px;
+  margin-top: 300px;
 }
 
 
@@ -18788,7 +18788,7 @@ option {
   }
 
   .nws-title {
-    margin-top: 300px !important;
+    margin-top: 1200px !important;
   }
 
   .nws-title1 {
@@ -18803,7 +18803,7 @@ option {
   }
 
   .nws-title {
-    margin-top: 300px !important;
+    margin-top: 320px !important;
   }
 
   .nws-title1 {
