@@ -17,7 +17,7 @@ document.write(`
 
             <li>
               <i class="fas fa-map-marker-alt"></i>
-              <span class="font_two">Nordstrasse 14, 4665 Oftringen <br>(beim YouCenter)</span>
+              <span class="font_two">Lausenerstrasse 18<br/> 4410 Liestal</span>
             </li>
           </ul>
         </div>
